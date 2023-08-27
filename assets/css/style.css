@@ -1,0 +1,108 @@
+/* Colors sourced from https://www.khroma.co/generator */
+:root {
+/*valley*/    
+--ash: #C8C5B9;
+--highland: #66945F;
+--cyan: #3C6863;
+--spruce: #3A444F;
+/*terracotta*/
+--rio: #AF9898;
+--taupe: #B4B49A;
+--river: #414D52;
+--amazon: #348053;
+}
+
+/*idea from solution to Module 2 mini project*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 1.75rem;
+    line-height: 1.5;
+    color: var(--spruce);
+    list-style: none;
+    background-color: var(--ash);
+}
+
+a {
+    text-decoration: none;
+    color: var(--ash);
+}
+
+/* TODO: move nav to right*/
+.title-card {
+    width: 100%;
+    background-color: var(--spruce);
+    color: var(--amazon);
+    display: flex; 
+    justify-content: space-between;
+}
+
+h1 {
+    padding-left: 40px;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.title-card ul {
+    position: relative;
+    top: 45px;
+}
+
+.title-card li {
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+}
+
+.nav-link {
+    transition: color 0.5s;
+}
+
+.nav-link:hover {
+    color: var(--amazon);
+}
+
+#about-me {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+    padding: 15px;
+    border: solid var(--cyan); 
+    margin-top: 150px; 
+    margin-left: 25px;
+    margin-right: 50px;
+}
+
+h2 + img {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my-picture {
+    flex: 1 1 0;
+    max-height: 200px;
+}
+
+
+#about-me p {
+    font-size: 2rem;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 25px;  
+}
+
+@media screen and (max-width: 768px) {
+    #about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+}
