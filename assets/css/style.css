@@ -58,9 +58,9 @@ h2 {
 }
 
 .title-card li {
-    list-style-type: none;
     display: inline;
     padding: 10px;
+    flex: 0 1 0;
 }
 
 .nav-link {
@@ -82,16 +82,10 @@ h2 {
     margin-right: 50px;
 }
 
-h2 + img {
-    flex-direction: column;
-    justify-content: center;
-}
-
 .my-picture {
     flex: 1 1 0;
     max-height: 200px;
 }
-
 
 #about-me p {
     font-size: 2rem;
@@ -100,9 +94,53 @@ h2 + img {
     padding: 25px;  
 }
 
+#my-work {
+    margin-top: 150px;
+    width: 175px;
+    border-right: solid;
+    height: 1000px;
+}
+
+#contact-me {
+    margin-top: 75px;
+}
+
+#contact-me h2 {
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    justify-content: space-around; 
+}
+
+.contact-links li {
+    font-weight: bold;
+    color: var(--spruce);
+    padding: 8px;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--highland);
+    padding-bottom: 10px;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 3rem;
+}
+
 @media screen and (max-width: 768px) {
+    .title-card {
+        flex-wrap: wrap;
+    }
     #about-me {
         flex-direction: column;
         align-items: center;
     }
 }
+
