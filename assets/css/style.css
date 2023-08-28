@@ -95,10 +95,59 @@ h2 {
 }
 
 #my-work {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sidebar {
     margin-top: 150px;
     width: 175px;
     border-right: solid;
     height: 1000px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-template-areas: 
+    'header header header'
+    'footer1 footer2 footer3';
+    right: 300px;
+    gap: 1em;
+    height: 1000px;
+    width: 650px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 150px;
+}
+
+.item {
+    border: solid var(--cyan);
+    box-shadow: var(--spruce);
+}
+
+.item-1 {
+    grid-area: header;
+}
+
+.item-2,
+.item-3,
+.item-4 {
+    background-color: var(--spruce);
+    opacity: 50%;
+    color: var(--spruce);
+    font-weight: bold; 
+    box-shadow: 5px 5px 5px 0px;
+}
+
+.item-text {
+    opacity: 100%; 
+    color: var(--ash);
+    margin-left: 7px;
+    padding: 2px;
+    margin-right: 60px;
 }
 
 #contact-me {
@@ -141,6 +190,14 @@ h3 {
     #about-me {
         flex-direction: column;
         align-items: center;
+    }
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .item-1 {
+        flex: 2 0 30%;
     }
 }
 
