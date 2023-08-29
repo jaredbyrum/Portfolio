@@ -16,7 +16,7 @@
  
  GitHub: https://github.com/jaredbyrum/Portfolio
  
- Live: jaredbyrum.github.io/Portfolio
+ Live: https://jaredbyrum.github.io/Portfolio
 
  # Preview
  ![Screenshot (16)](https://github.com/jaredbyrum/Portfolio/assets/141647333/551b0194-5cd3-4b90-b69a-a0c218165414)
