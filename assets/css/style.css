@@ -38,6 +38,7 @@
         background-color: var(--spruce);
         color: var(--amazon);
         display: flex; 
+        position: relative;
         justify-content: space-between;
     }
     
@@ -52,19 +53,20 @@
         padding-right: 30px;
     }
     
-    .title-card ul {
+    .title-card nav {
         position: relative;
-        top: 45px;
+        padding-top: 10px;
+        padding-right: 15px;
+        bottom: -30px;
     }
     
     .title-card li {
         display: inline;
         padding: 10px;
-        flex: 0 1 0;
     }
     
     .nav-link {
-        transition: color 0.5s;
+        transition: all 0.5s;
     }
     
     .nav-link:hover {
@@ -83,13 +85,11 @@
     }
     
 .about-me {
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 
     .my-picture {
-        align-items: center;
-        flex: 1 1 0;
-        max-height: 200px;
+       max-height: 200px;
     }
     
     #about-me p {
@@ -123,12 +123,9 @@
         gap: 1em;
         height: 1000px;
         width: 100%;
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-top: 50px;
+        margin: 50px 50px 0px;
         position: relative;
         left: -15px;
-        right: 15px;
     }
     
     .item {
@@ -166,7 +163,6 @@
         position: absolute;
         background-color: var(--spruce);
         color: var(--ash);
-        opacity: 100%;
         bottom: -10px;
         right: 25px;
         padding: 5px;
@@ -217,7 +213,12 @@
     
     @media screen and (max-width: 768px) {
         .title-card {
-            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .title-card nav {
+            bottom: -5px; 
         }
         #about-me {
             flex-direction: column;
