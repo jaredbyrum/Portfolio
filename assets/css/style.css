@@ -33,7 +33,6 @@ a {
     color: var(--ash);
 }
 
-/* TODO: move nav to right*/
 .title-card {
     width: 100%;
     background-color: var(--spruce);
@@ -123,64 +122,41 @@ h2 {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 50px;
+    position: relative;
+    left: -15px;
+    right: 15px;
 }
 
 .item {
+    font-weight: bold;
+    background: linear-gradient(rgba(120, 158, 122, 0.568) 0%, rgba(0,0,0,0)100%);
     border: solid var(--cyan);
-    box-shadow: var(--spruce);
-}
-
-.item-1 {
-    grid-area: header;
+    color: var(--spruce);
     opacity: 65%;
     border-radius: 8px;
     box-shadow: 5px 5px 5px var(--spruce);
     transition: opacity 0.5s, transform 0.5s;
 }
 
-
-.item-1:hover {
-    opacity: 100%;
-    transform: scale(1.02);
-    cursor: pointer;
-}
-
-/* background image taken from https://stock.adobe.com/ */
-.item-2,
-.item-3,
-.item-4 {
-    background-image: url("../images/placeholder.jpg");
-    background-color: var(--spruce);
-    opacity: 65%;
-    background-position: center;
+.item-1 {
+    grid-area: header;
+    background-image: url(../images/Horiseon\ Site.png);
+    background-size: cover;
     border-radius: 8px;
-    color: var(--spruce);
-    font-weight: bold; 
-    box-shadow: 5px 5px 5px;
-    transition: opacity 0.5s, transform 0.5s;
 }
 
-.item-2:hover,
-.item-3:hover,
-.item-4:hover {
+/* transform idea from stack overflow */
+.item:hover{
     opacity: 100%;
     transform: scale(1.03);
     cursor: pointer;
 }
 
-.item-2:focus,
-.item-3:focus,
-.item-4:focus {
-
-}
-
-.item-text {
-    opacity: 100%; 
+.item-text { 
     color: var(--spruce);
-    margin-left: 7px;
-    padding: 2px;
-    margin-right: 60px;
-    flex: 0 1 0;
+    opacity: 100%;
+    bottom: -10px;
+
 }
 
 #contact-me {
@@ -198,10 +174,20 @@ h2 {
     justify-content: space-around; 
 }
 
-.contact-links li {
+
+.contact-links li,
+.contact-links a {
     font-weight: bold;
     color: var(--spruce);
     padding: 8px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.contact-links li:hover,
+.contact-links a:hover {
+    transform: scale(1.05);
+    color: var(--amazon);
 }
 
 footer {
