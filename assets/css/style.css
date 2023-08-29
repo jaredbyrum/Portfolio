@@ -164,12 +164,12 @@
     
     .item-text { 
         position: absolute;
-        color: var(--spruce);
-        background-color: var(--ash);
+        background-color: var(--spruce);
+        color: var(--ash);
         opacity: 100%;
         bottom: -10px;
         right: 25px;
-    
+        padding: 5px;
     }
     
     #contact-me {
@@ -234,5 +234,10 @@
         .contact-links {
             flex-direction: column;
             align-items: center;
+        }
+        .item-2,
+        .item-3,
+        .item-4 {
+            flex: 1 0 5%;
         }
     }
