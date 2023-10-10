@@ -141,17 +141,22 @@ h2 {
 }
 
 .item-1 {
-    grid-area: header;
+    background-image: url(../images/Screenshot\ \(24\).png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.item-2 {
     background-image: url(../images/Horiseon\ Site.png);
     background-size: cover;
     border-radius: 8px;
 }
 
-.item-2 {
+.item-3 {
     background-image: url(../images/Screenshot\ \(14\).png);
     background-size: cover;
 }
-
 /* transform idea from stack overflow */
 .item:hover{
     opacity: 100%;
